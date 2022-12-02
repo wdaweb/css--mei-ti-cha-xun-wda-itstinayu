@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: '微軟正黑體';
+}
+.wrap {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  height: 600px;
+}
+.row {
+  text-align: center;
+}
+.col {
+  margin-top: 20px;
+  border-bottom: 1px solid #aaa;
+  padding: 10px;
+}
+.col img {
+  width: 100px;
+}
+.col h3,
+.col p {
+  text-align: left;
+}
+.col .wda-info {
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  p {
+    display: none;
+  }
+  .wda-info{
+    display: flex;
+    text-align: center;
+  }
+  .col {
+    border: none;
+  }
+  .row {
+    display: flex;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  .center {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+  }
+  .left {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    order: 1;
+  }
+  .right {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 3;
+  }
+  .html {
+    padding-top: 20px;
+    position: relative;
+  }
+  .js {
+    align-self: center;
+    position: relative;
+  }
+  .jquery {
+    align-self: end;
+    position: relative;
+  }
+  .css {
+    margin-right: 30px;
+    position: relative;
+    order: 5;
+  }
+  .bs {
+    align-self: flex-start;
+    margin-left: 100px;
+    position: relative;
+  }
+  .vue {
+    align-self: end;
+    position: relative;
+  }
+  .sass {
+    order: 4;
+    position: relative;
+  }
+  .html::before {
+    position: absolute;
+    content: "";
+    left: 80%;
+    bottom: -30%;
+    border-top: 1px solid;
+    width: 400px;
+    border-color: #aaa;
+    transform: rotate(20deg);
+  }
+  .js::before {
+    position: absolute;
+    content: "";
+    left: 100%;
+    top: 80%;
+    border-top: 1px solid;
+    width: 250px;
+    border-color: #aaa;
+    transform: rotate(0deg);
+  }
+  .jquery::before {
+    position: absolute;
+    content: "";
+    left: 100%;
+    top: 10%;
+    border-top: 1px solid;
+    width: 150px;
+    border-color: #aaa;
+    transform: rotate(-45deg);
+  }
+  .css::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -10%;
+    right: -50%;
+    border-top: 1px solid;
+    border-color: #aaa;
+    transform: rotate(45deg);
+  }
+  .bs::before {
+    position: absolute;
+    content: "";
+    left: -132%;
+    bottom: -22%;
+    right: 98%;
+    border-top: 1px solid;
+    border-color: #aaa;
+    transform: rotate(-45deg);
+  }
+  .vue::before {
+    position: absolute;
+    content: "";
+    left: -169%;
+    bottom: 93%;
+    width: 200px;
+    border-top: 1px solid;
+    border-color: #aaa;
+    transform: rotate(-162deg);
+  }
+  .sass::before {
+    position: absolute;
+    content: "";
+    left: -250%;
+    bottom: 30%;
+    right: 150%;
+    border-top: 1px solid;
+    border-color: #aaa;
+    transform: rotate(0deg);
+  }
+  
+}
